@@ -38,9 +38,9 @@ func TestGetAPIKey(t *testing.T) {
 			wantErr: true,
 		},
 		{
-			name:    "Fail test on purpose",
+			name:    "Malformed header",
 			header:  header4,
-			wantErr: false,
+			wantErr: true,
 		},
 	}
 
